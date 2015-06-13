@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>カバーURL:</strong>
+  <%= @book.image %>
+</p>
+
+<p>
+  <strong>書名:</strong>
+  <%= @book.name %>
+</p>
+
+<p>
+  <strong>Author:</strong>
+  <%= @book.author %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @book.price %>
+</p>
+
+<p>
+  <strong>Publisher:</strong>
+  <%= @book.publisher %>
+</p>
+
+<p>
+  <strong>Date of publication:</strong>
+  <%= @book.date_of_publication %>
+</p>
+
+<p>
+  <strong>Isbn code:</strong>
+  <%= @book.ISBN_code %>
+</p>
+
+<p>
+  <strong>Availability:</strong>
+  <%= @book.availability %>
+</p>
+
+<%= link_to 'Edit', edit_book_path(@book) %> |
+<%= link_to 'Back', books_path %>
